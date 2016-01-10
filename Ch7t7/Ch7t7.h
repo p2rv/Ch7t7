@@ -2,9 +2,9 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 
-struct TNode
-{
+struct TNode{
 	std::string word;
 	int count;
 	TNode* left;
@@ -12,6 +12,5 @@ struct TNode
 };
 
 bool addNode(TNode* tNode);
-void printNode(TNode* tNode);
-void printSortNode(TNode* tNode);
-int getDepth(const int* treeLength);
+void printTree(TNode* tNode, int level);
+TNode* fillTree();
